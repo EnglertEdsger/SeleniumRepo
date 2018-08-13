@@ -19,8 +19,8 @@ public class TestClass {
 	@Test
 	public void callWebDriver() {
 		ChromeDriver driver = new ChromeDriver();
-
-		logger.error("chujniaMOrdo");
+		
+		logger.error("zmiana");
 		System.out.println("dupa");
 		driver.get("https://www.onet.pl");
 		
