@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 
-public class TestClass {
+public class TestClass implements ValuesSet, PathsSet {
 	final static Logger logger = Logger.getLogger(TestClass.class);
 
 	@BeforeTest
@@ -22,7 +22,7 @@ public class TestClass {
 		
 		logger.error("zmiana");
 		System.out.println("dupa");
-		driver.get("https://www.onet.pl");
+		driver.get(onetLink);
 		
 	}
 
