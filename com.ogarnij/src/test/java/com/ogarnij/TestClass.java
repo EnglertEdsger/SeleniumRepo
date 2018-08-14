@@ -8,11 +8,10 @@ import org.openqa.selenium.chrome.*;
 
 public class TestClass implements ValuesSet, PathsSet {
 	final static Logger logger = Logger.getLogger(TestClass.class);
-
+	public LocalSetUp x = new LocalSetUp();
 	@BeforeTest
 	public void setUpChromeDriver() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\JakubKaczynski\\Downloads\\selenium-java-3.13.0\\chromedriver.exe");
-
+		x.setDriver();
 
 	}
 
